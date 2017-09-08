@@ -32,6 +32,13 @@ namespace SupportSystem
 
             //Assign the text box values to property values
             objTicket.Title = txtTitle.Text;
+            objTicket.Body = txtBody.Text;
+            objTicket.UrgencyLevel = ddlUrgencyLevel.SelectedItem.Text;
+            objTicket.UserID = 1;
+
+            //Add the ticket and save changes
+            db.Tickets.Add(objTicket);
+            db.SaveChanges();
         }
     }
 }

@@ -2,13 +2,12 @@
 
     <!DOCTYPE html>
     <html>
-
     <head>
         <title>Test Materialize Site</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="../stylesheet.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+        <link href="css/stylesheet.css" rel="stylesheet" />
         <script src="//code.jquery.com/jquery-2.1.2.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
         <script>
@@ -59,10 +58,9 @@
             <div class="wrapper">
                 <br>
                 <span class="title">Create a New Ticket</span>
+                <form runat="server" id="form">
                 <div class="row">
-                    <form class="col s12">
                         <div class="row">
-                           <form runat="server" id="form">
                             <div class="input-field col s6">
                                 <asp:TextBox ID="txtTitle" runat="server" CssClass="validate"></asp:TextBox>
                                 <label for="txtSubject">Subject</label>
@@ -86,12 +84,13 @@
                                     <i class="material-icons right">send</i>
                             </center>
                         </div>
-                    </form>
                 </div>
                 </form>
+                </div>
         </main>
 
-        <footer class="page-footer">
+<%--        <footer class="page-footer" style="position:fixed;left:0px;bottom:0px;height:150px;width:100%;">--%>
+        <footer class="page-footer" id="footer">
             <div class="container">
                 <div class="row">
                     <div class="col l6 s12">
@@ -119,7 +118,5 @@
                 </div>
             </div>
         </footer>
-        <!-- Wrapper End -->
-        </div>
     </body>
     </html>

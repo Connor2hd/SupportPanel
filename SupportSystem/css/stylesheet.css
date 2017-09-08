@@ -4,7 +4,7 @@
 
 .title {
 	font-family: 'Roboto', sans-serif;
-  font-weight: bold;
+    font-weight: bold;
 	font-size: 25px;
 	padding-left: 16px;
 }
@@ -28,5 +28,17 @@ main {
 }
 
 footer {
-	 		padding-left: 300px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 150px;
+    width: 100%;
+}
+
+#footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 150px;
+    width: 100%;
 }
