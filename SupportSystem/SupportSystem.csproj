@@ -177,7 +177,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
+    <Content Include="Pages\About.aspx" />
     <Content Include="Account\AddPhoneNumber.aspx" />
     <Content Include="Account\Confirm.aspx" />
     <Content Include="Account\Forgot.aspx" />
@@ -209,8 +209,8 @@
     </Content>
     <None Include="Properties\PublishProfiles\CMSupportTicket - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Homepage.aspx" />
-    <Content Include="Login.aspx" />
+    <Content Include="Pages\Homepage.aspx" />
+    <Content Include="Pages\Login.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -251,9 +251,9 @@
       <DependentUpon>SupportTicketModel.edmx</DependentUpon>
       <LastGenOutput>SupportTicketModel.cs</LastGenOutput>
     </Content>
-    <Content Include="TicketCreate.aspx" />
-    <Content Include="TicketPool.aspx" />
-    <Content Include="TicketView.aspx" />
+    <Content Include="Pages\TicketCreate.aspx" />
+    <Content Include="Pages\TicketPool.aspx" />
+    <Content Include="Pages\TicketView.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -373,11 +373,11 @@
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
+    <Compile Include="Pages\About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="About.aspx.designer.cs">
+    <Compile Include="Pages\About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\IdentityConfig.cs" />
@@ -393,18 +393,18 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Homepage.aspx.cs">
+    <Compile Include="Pages\Homepage.aspx.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Homepage.aspx.designer.cs">
+    <Compile Include="Pages\Homepage.aspx.designer.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
+    <Compile Include="Pages\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Login.aspx.designer.cs">
+    <Compile Include="Pages\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
@@ -445,25 +445,25 @@
     <Compile Include="Ticket.cs">
       <DependentUpon>SupportTicketModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="TicketCreate.aspx.cs">
+    <Compile Include="Pages\TicketCreate.aspx.cs">
       <DependentUpon>TicketCreate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TicketCreate.aspx.designer.cs">
+    <Compile Include="Pages\TicketCreate.aspx.designer.cs">
       <DependentUpon>TicketCreate.aspx</DependentUpon>
     </Compile>
-    <Compile Include="TicketPool.aspx.cs">
+    <Compile Include="Pages\TicketPool.aspx.cs">
       <DependentUpon>TicketPool.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TicketPool.aspx.designer.cs">
+    <Compile Include="Pages\TicketPool.aspx.designer.cs">
       <DependentUpon>TicketPool.aspx</DependentUpon>
     </Compile>
-    <Compile Include="TicketView.aspx.cs">
+    <Compile Include="Pages\TicketView.aspx.cs">
       <DependentUpon>TicketView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TicketView.aspx.designer.cs">
+    <Compile Include="Pages\TicketView.aspx.designer.cs">
       <DependentUpon>TicketView.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserAccount.cs">
