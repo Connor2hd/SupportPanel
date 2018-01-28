@@ -1,11 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="TicketView.aspx.cs" Inherits="SupportPanel2018.Pages.TicketView" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h2><asp:Label ID="lblTitle" runat="server" Text="Label"></asp:Label></h2>
-    <br />
     <h3><asp:Label ID="lblAuthor" runat="server" Text="Label"></asp:Label></h3>
     <div class="row">
         <div class="col s12 m5">
-        <div class="card-panel teal">
+         <asp:PlaceHolder ID="phCard" runat="server"></asp:PlaceHolder>
           <span class="white-text">
               <asp:Label ID="lblBody" runat="server" Text="Label"></asp:Label>
               <br />

@@ -25,6 +25,25 @@ namespace SupportPanel2018.Pages
             lblBody.Text = activeTicket.Body;
             lblAuthor.Text = activeTicket.UserAccount.Username;
 
+            //Set card color depending on urgency level
+            string colour = "";
+
+            //Determine the ticket color
+            if (activeTicket.UrgencyLevel == "Low")
+            {
+                colour = "blue";
+            }
+            if (activeTicket.UrgencyLevel == "Medium")
+            {
+                colour = "orange";
+            }
+            if (activeTicket.UrgencyLevel == "High")
+            {
+                colour = "red";
+            }
+
+            //Add the card and colour HTML
+            phCard.Controls.Add(new LiteralControl("<div class='card-panel " + colour + "'>"));
         }
     }
 }
