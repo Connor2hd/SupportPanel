@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="SupportTicketModelStoreContainer" CdmEntityContainer="SupportTicketEntities">
+  <EntityContainerMapping StorageEntityContainer="SupportTicketModelStoreContainer" CdmEntityContainer="SupportTicketEntities1">
     <EntitySetMapping Name="Replies">
       <EntityTypeMapping TypeName="SupportTicketModel.Reply">
         <MappingFragment StoreEntitySet="Reply">
@@ -20,6 +20,7 @@
           <ScalarProperty Name="UrgencyLevel" ColumnName="UrgencyLevel" />
           <ScalarProperty Name="Title" ColumnName="Title" />
           <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="TimePosted" ColumnName="TimePosted" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

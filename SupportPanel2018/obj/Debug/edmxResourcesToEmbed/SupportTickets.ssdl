@@ -19,6 +19,7 @@
     <Property Name="UrgencyLevel" Type="varchar" MaxLength="12" />
     <Property Name="Title" Type="varchar" MaxLength="30" />
     <Property Name="Body" Type="varchar" MaxLength="500" />
+    <Property Name="TimePosted" Type="datetime" />
   </EntityType>
   <EntityType Name="UserAccount">
     <Key>

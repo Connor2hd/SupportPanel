@@ -21,6 +21,7 @@
     <Property Name="UrgencyLevel" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
     <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
     <Property Name="Body" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="TimePosted" Type="DateTime" Precision="3" />
     <NavigationProperty Name="Replies" Relationship="Self.FK__Reply__TicketID__3F466844" FromRole="Ticket" ToRole="Reply" />
     <NavigationProperty Name="UserAccount" Relationship="Self.FK__Ticket__UserID__38996AB5" FromRole="Ticket" ToRole="UserAccount" />
   </EntityType>
@@ -71,7 +72,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="SupportTicketEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="SupportTicketEntities1" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Replies" EntityType="Self.Reply" />
     <EntitySet Name="Tickets" EntityType="Self.Ticket" />
     <EntitySet Name="UserAccounts" EntityType="Self.UserAccount" />

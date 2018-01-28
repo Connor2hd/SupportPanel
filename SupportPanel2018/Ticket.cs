@@ -25,6 +25,7 @@ namespace SupportPanel2018
         public string UrgencyLevel { get; set; }
         public string Title { get; set; }
         public string Body { get; set; }
+        public Nullable<System.DateTime> TimePosted { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Reply> Replies { get; set; }

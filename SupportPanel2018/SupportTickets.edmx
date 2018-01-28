@@ -24,6 +24,7 @@
           <Property Name="UrgencyLevel" Type="varchar" MaxLength="12" />
           <Property Name="Title" Type="varchar" MaxLength="30" />
           <Property Name="Body" Type="varchar" MaxLength="500" />
+          <Property Name="TimePosted" Type="datetime" />
         </EntityType>
         <EntityType Name="UserAccount">
           <Key>
@@ -113,6 +114,7 @@
           <Property Name="UrgencyLevel" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
           <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="Body" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="TimePosted" Type="DateTime" Precision="3" />
           <NavigationProperty Name="Replies" Relationship="Self.FK__Reply__TicketID__3F466844" FromRole="Ticket" ToRole="Reply" />
           <NavigationProperty Name="UserAccount" Relationship="Self.FK__Ticket__UserID__38996AB5" FromRole="Ticket" ToRole="UserAccount" />
         </EntityType>
@@ -163,7 +165,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="SupportTicketEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="SupportTicketEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Replies" EntityType="Self.Reply" />
           <EntitySet Name="Tickets" EntityType="Self.Ticket" />
           <EntitySet Name="UserAccounts" EntityType="Self.UserAccount" />
@@ -185,7 +187,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="SupportTicketModelStoreContainer" CdmEntityContainer="SupportTicketEntities">
+        <EntityContainerMapping StorageEntityContainer="SupportTicketModelStoreContainer" CdmEntityContainer="SupportTicketEntities1">
           <EntitySetMapping Name="Replies">
             <EntityTypeMapping TypeName="SupportTicketModel.Reply">
               <MappingFragment StoreEntitySet="Reply">
@@ -205,6 +207,7 @@
                 <ScalarProperty Name="UrgencyLevel" ColumnName="UrgencyLevel" />
                 <ScalarProperty Name="Title" ColumnName="Title" />
                 <ScalarProperty Name="Body" ColumnName="Body" />
+                <ScalarProperty Name="TimePosted" ColumnName="TimePosted" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

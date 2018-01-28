@@ -152,6 +152,7 @@
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Pages\TicketPool.aspx" />
+    <Content Include="Pages\TicketView.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -183,8 +184,8 @@
     <Content Include="Site.Master" />
     <Content Include="SupportTickets.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>SupportTickets.Context.cs</LastGenOutput>
       <DependentUpon>SupportTickets.edmx</DependentUpon>
+      <LastGenOutput>SupportTickets.Context.cs</LastGenOutput>
     </Content>
     <Content Include="SupportTickets.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -229,6 +230,13 @@
     </Compile>
     <Compile Include="Pages\TicketPool.aspx.designer.cs">
       <DependentUpon>TicketPool.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TicketView.aspx.cs">
+      <DependentUpon>TicketView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\TicketView.aspx.designer.cs">
+      <DependentUpon>TicketView.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reply.cs">
