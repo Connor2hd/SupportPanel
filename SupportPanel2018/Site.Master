@@ -49,14 +49,16 @@
         <div class="navbar-fixed-top">
             <nav>
                 <div class="nav-wrapper">
-                <a href="#" class="brand-logo right">Support Ticket System</a>
+                <a href="#" class="brand-logo center">Support Ticket System</a>
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
                     <li><a href="sass.html">Homepage</a></li>
                     <li><a href="Pages/TicketPool.aspx">Ticket Pool</a></li>
                     <li><a href="collapsible.html">Create Ticket</a></li>
-                    <li><a href="collapsible.html">About</a></li>
-                    <li><a class="waves-effect waves-light btn">Logout</a></li>
+                    <li><a href="collapsible.html">About</a></li>  
                 </ul>
+                    <ul class="right">
+                        <li><a class="waves-effect waves-light btn">Logout</a></li>
+                    </ul>
                 </div>
             </nav>
         </div>
